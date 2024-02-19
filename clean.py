@@ -31,3 +31,5 @@ if __name__ == "__main__":
     clean(input1, input2, output)   # Clean data
 
     output_file = pd.read_csv(output)
+    num_rows, num_columns = output_file.shape
+    print("Shape of the output file: ", "\nrows: ", num_rows, "\ncolumns: ", num_columns)
